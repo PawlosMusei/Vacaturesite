@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Path: frontend/src/components/Navbar.css */
+
+.navbar {
+  font-family: "IBM_Plex_Sans variant11", Tofu;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  gap: 40px;
+}
+
+ul a {
+  color: blue;
+}
+
+ul li {
+  margin-right: 40px;
+}
+
+ul  a {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+ul a:hover {
+  color: #515151;
+}
+
+
+
+
+/* Path: frontend/src/components/Post.css */
+
+.post {
+  background-color: #ebebeb;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 3px;
+  width: 48vw;
+  height: 76vh;
+}
+
+.post h2 {
+  margin: 1rem;
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  width: 30vw;
+  font-weight: extra bold italic;
+}
+
+.information {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 20vw;
+  height: 70vh;
+}
+
+.information-h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.information-text {
+  width: 28vw;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.information-button {
+  background-color: #6e6e6e;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 5vh;
+  width: 10vw;
+}
+
+.information-button-item {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 5vh;
+  width: 10vw;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.postimg {
+  margin: 1rem;
+  width: 85%;
+  height: 70%;
+  margin-top: 10px;
+}
+
+.homeInfo {
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+span {
+  color: #6e6e6e;
+}
+
+
+
+
+/* path: frontend/src/components/NewForm.css */
+
+.NewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 4rem;
+  height: 55vh;
+}
+
+.NewForm h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.NewForm input {
+  width: 15vw;
+  height: 4vh;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #6e6e6e;
+  background-color: #ebebeb;
+}
+
+.image{
+  width: 20vw;
+  height: 20vh;
+
+}
+
+.NewForm button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 5vh;
+  width: 10vw;
+}
+
+/* Path: frontend/src/components/signup.css */
+
+.ifdj{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77.5vh;
+}
+
+.ifdj h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.ifdj button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 7vh;
+  width: 40vw;
+  margin-bottom: 25px;
+}
+
+
+
+
+/* Path: frontend/src/components/createForm.css */
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77.5vh;
+}
+
+.createForm label {
+  font-weight: bold;
+}
+
+.createForm input {
+  margin-top: 10px;
+  width: 50vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ebebeb;
+}
+
+.createForm button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 6vh;
+  width: 50vw;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.createFormLink {
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+}
+
+
+/* Path: frontend/src/components/Login.css */
+
+.LoginForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77.5vh;
+}
+
+.LoginForm label {
+  font-weight: bold;
+}
+
+.LoginForm input {
+  margin-top: 10px;
+  width: 50vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ebebeb;
+}
+
+.LoginForm button {
+  background-color: #6e6e6e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 6vh;
+  width: 50vw;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.LoginFormLink {
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+}
+
+
+/* Path: frontend/src/components/Footer.css */
+
+footer {
+  background-color: #6e6e6e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+
+@media (max-width: 768px) {
+  /* Path: frontend/src/components/Navbar.css */
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-left: 0;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  ul li {
+    margin-right: 0;
+  }
+
+  /* Path: frontend/src/components/Post.css */  
+  .homeInfo {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+
+  .post {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .post h2 {
+    width: 90vw;
+  }
+
+  .information {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .information-h1 {
+    width: 90vw;
+  }
+
+  .information-text {
+    width: 90vw;
+  }
+
+  .information-button {
+    width: 90vw;
+  }
+
+  /* Path: frontend/src/components/NewForm.css */
+  .NewForm {
+    margin: 1rem;
+    height: 100%;
+    margin-top: 5rem;
+  }
+
+  .NewForm input {
+    margin-top: 1rem;
+    width: 90vw;
+  }
+
+  .NewForm label {
+    margin-top: 1rem;
+    width: 90vw;
+  }
+
+  .NewForm button {
+    width: 90vw;
+  }
+
+  /* Path: frontend/src/components/signup.css */
+  .ifdj button {
+    width: 90vw;
+  }
+
+  /* Path: frontend/src/components/LoginForm.css */
+  .LoginForm input {
+    margin-top: 1rem;
+    width: 90vw;
+  }
+
+  .LoginForm button {
+    width: 90vw;
+  }
+
+  /* Path: frontend/src/components/createForm.css */
+
+  .createForm input {
+    width: 90vw;
+  }
+
+  .createForm button {
+    width: 90vw;
+  }
+
+}
