@@ -1,8 +1,23 @@
-import express from 'express';
-import { getAllTasks, createTask } from '../controllers/taskController.js';
+import express from "express";
+import multer from "multer";
+import { createTask, getAllTasks } from "../controllers/taskController.js";
+
 const router = express.Router();
-// Endpoint om alle taken op te halen
-router.get('/', getAllTasks);
-// Endpoint om een nieuwe taak toe te voegen
-router.post('/', createTask);
+
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "uploads/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
+});
+
+const upload = multer({ storage });
+
+// Routes
+router.post("/", upload.single("image"), createTask);
+router.get("/", getAllTasks);
+
 export default router;
